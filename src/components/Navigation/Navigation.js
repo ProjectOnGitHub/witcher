@@ -1,12 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './_Navigation.scss';
 
 function Navigation(props) {
   return (
     <nav className={`${props.name}__navigation`}>
-      <ul className={`${props.name}__menu`}>
-        {props.children}
-      </ul>
+      {props.children}
     </nav>
   );
 }
@@ -14,6 +13,6 @@ function Navigation(props) {
 export default Navigation;
 
 Navigation.propTypes = {
-  name: Navigation.string,
-  children: Navigation.isRequired,
+  name: PropTypes.string,
+  children: PropTypes.node,
 };
