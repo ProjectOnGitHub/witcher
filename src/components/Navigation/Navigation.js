@@ -11,5 +11,9 @@ function Navigation(props) {
   );
 }
 
-
 export default Navigation;
+
+Navigation.propTypes = {
+  name: Navigation.string,
+  children: Navigation.isRequired,
+};
