@@ -1,0 +1,14 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+.app {
+  @include gridable(100%);
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  align-items: center;
+  background-color: $color-dark;
+  font: normal 14px/20px 'Inter', Arial, sans-serif;
+}
