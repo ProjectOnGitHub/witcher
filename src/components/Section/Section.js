@@ -15,5 +15,5 @@ function Section(props) {
 Section.propTypes = {
   name: Section.string,
   title: Section.string,
-  children: Section.string,
+  children: Section.isRequired,
 };
