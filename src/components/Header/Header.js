@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import headerLogo from '../../images/logo.png';
 import Navigation from '../Navigation/Navigation';
 import './_Header.scss';
@@ -12,9 +13,9 @@ function Header() {
         </a>
         <Navigation name='header'>
           <li className='header__menu-item'>
-            <a href='#' className='header__link'>
+            <NavLink href='/' className='header__link'>
               Основные игры
-            </a>
+            </NavLink>
             <span className='header__menu_drop'></span>
             <ul className='header__submenu header__submenu_active'>
               <li className='header__submenu-item'>
@@ -45,9 +46,9 @@ function Header() {
             </ul>
           </li>
           <li className='header__menu-item'>
-            <a href='#' className='header__link'>
+            <NavLink href='/online' className='header__link'>
               Онлайн-игры
-            </a>
+            </NavLink>
             <span className='header__menu_drop'></span>
             <ul className='header__submenu'>
               <li className='header__submenu-item'>
@@ -73,9 +74,9 @@ function Header() {
             </ul>
           </li>
           <li className='header__menu-item'>
-            <a href='#' className='header__link'>
+            <NavLink href='/other' className='header__link'>
               Прочие игры
-            </a>
+            </NavLink>
             <span className='header__menu_drop'></span>
             <ul className='header__submenu'>
               <li className='header__submenu-item'>
