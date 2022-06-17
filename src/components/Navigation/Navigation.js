@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import './_Navigation.scss';
 
 function Navigation(props) {
-  return (
-    <nav className={`${props.name}__navigation`}>
-      {props.children}
-    </nav>
-  );
+  return <nav className={`${props.name}__navigation`}>{props.children}</nav>;
 }
 
 export default Navigation;

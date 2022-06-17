@@ -3,9 +3,7 @@ import Main from '../Main/Main';
 import './_MainPrime.scss';
 
 function MainPrime() {
-  return (
-    <Main />
-  );
+  return <Main />;
 }
 
 export default MainPrime;

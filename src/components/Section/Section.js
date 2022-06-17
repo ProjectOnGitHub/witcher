@@ -10,7 +10,8 @@ function Section(props) {
       </article>
     </section>
   );
-} export default Section;
+}
+export default Section;
 
 Section.propTypes = {
   name: Section.string,
