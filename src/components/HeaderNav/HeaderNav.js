@@ -1,17 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Navigation from '../Navigation/Navigation';
 import Button from '../Button/Button';
+
 import './_HeaderNav.scss';
 
-function HeaderNav() {
+function HeaderNav({ isOpen, onClose, onMobileMenuClick }) {
   return (
     <>
       <Navigation name='header'>
-        <ul className="header__menu">
+        <ul className={`header__menu ${isOpen && 'header__menu_opened'}`}>
           <li className='header__menu-item'>
             <a href='/' className='header__link'>
               Основные игры <span className='header__menu_drop'></span>
-
             </a>
             <ul className='header__submenu'>
               <li className='header__submenu-item'>
@@ -96,12 +97,20 @@ function HeaderNav() {
       </Navigation>
       <Button
         mix={'header__menu-button'}
-        type="button"
-        name="mobile-menu"
-        aria-label="mobile menu"
+        type='button'
+        name='mobile-menu'
+        aria-label='mobile menu'
+        isOpen={isOpen}
+        onClose={onClose}
+        onMobileMenuClick={onMobileMenuClick}
       />
     </>
   );
 }
 
 export default HeaderNav;
+HeaderNav.propTypes = {
+  isOpen: PropTypes.func,
+  onClose: PropTypes.func,
+  onMobileMenuClick: PropTypes.func,
+};

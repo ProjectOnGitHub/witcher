@@ -18,13 +18,13 @@
       grid-template-columns: 1fr;
       gap: 5px;
       position: fixed;
+      padding-top: 80px;
       z-index: 1;
       top: 0;
       right: -320px;
       visibility: hidden;
-      align-content: center;
+      align-content: start;
       align-items: center;
-      justify-items: center;
       box-sizing: border-box;
       width: 100%;
       max-width: 320px;
@@ -33,6 +33,7 @@
       opacity: 0;
       background-color: $color-dark;
       font-size: 32px;
+      padding-left: 20px;
       &_opened {
         right: 0;
         visibility: visible;
@@ -68,6 +69,9 @@
       &:hover .header__submenu {
         visibility: visible;
         opacity: 1;
+        @media screen and (max-width: 768px) {
+          height: 100%;
+        }
       }
       &:hover .header__menu_drop {
         border-top: none;
@@ -90,6 +94,14 @@
     top: 30px;
     right: 0;
     transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      position: static;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-auto-flow: unset;
+      height: 0;
+      overflow: hidden;
+    }
   }
   &__link {
     @include flexible(min-content);
