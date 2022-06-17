@@ -9,7 +9,12 @@ function HeaderNav({ isOpen, onClose, onMobileMenuClick }) {
   return (
     <>
       <Navigation name='header'>
-        <ul className={`header__menu ${isOpen && 'header__menu_opened'}`}>
+        <div
+          className={`header__navigation-overlay ${
+            isOpen ? 'header__navigation-overlay_active' : ''
+          }`}
+          onClick={isOpen ? onClose : onMobileMenuClick}></div>
+        <ul className={`header__menu ${isOpen ? 'header__menu_opened' : ''}`}>
           <li className='header__menu-item'>
             <a href='/' className='header__link'>
               Основные игры <span className='header__menu_drop'></span>

@@ -6,6 +6,26 @@
     @include flexible(min-content);
     justify-content: space-between;
     align-items: center;
+    &-overlay {
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      right: -150%;
+      display: block;
+      visibility: hidden;
+      width: 100%;
+      height: 100vh;
+      transition: 0.5s;
+      opacity: 0;
+      background: $color-dark;
+      &_active {
+        cursor: pointer;
+        right: 0;
+        visibility: visible;
+        opacity: 0.6;
+        transition: 0.5s;
+      }
+    }
   }
   &__menu {
     @include gridable(100%);
@@ -15,6 +35,7 @@
     gap: 40px;
     position: relative;
     @media screen and (max-width: 768px) {
+      z-index: 5;
       grid-template-columns: 1fr;
       gap: 5px;
       position: fixed;
