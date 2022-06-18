@@ -6,7 +6,7 @@ import './_Promo.scss';
 
 function Promo() {
   return (
-    <Section name='promo' title='О Ведьмаке' image={promoImage}>
+    <Section name='promo' id='promo' title='О Ведьмаке' image={promoImage}>
       <p className='section__text promo__text'>
         Серия компьютерных игр разработана польской компанией CD Projekt RED по
         мотивам одноимённой серии романов польского писателя Анджея Сапковского.

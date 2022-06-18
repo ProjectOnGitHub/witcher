@@ -1,18 +1,29 @@
-import React from 'react';
+import { React, useEffect, useState } from 'react';
+import games from '../../utils/games';
 
 import './_App.scss';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
-import Promo from '../Promo/Promo';
 
 function App() {
+  const [cards, setCards] = useState([]);
+  useEffect(() => {
+    const data = games.map((item) => ({
+      id: item.id,
+      title: item.title,
+      url: item.url,
+      theme: item.theme,
+      year: item.year,
+      platforms: item.platforms,
+    }));
+    setCards(data);
+  }, []);
+
   return (
     <div className='app'>
       <Header />
-      <Main>
-        <Promo name='promo' />
-      </Main>
+      <Main games={cards} />
       <Footer />
     </div>
   );
