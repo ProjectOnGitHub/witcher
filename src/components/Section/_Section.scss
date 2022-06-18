@@ -1,0 +1,26 @@
+@import '../../scss/_mixins';
+@import '../../scss/_variables';
+
+.section {
+  @include gridable(100%);
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  &__info {
+    @include gridable(100%);
+    max-width: $max-width;
+    box-sizing: border-box;
+    padding: 0 20px;
+    align-content: center;
+  }
+  &__title {
+    font-size: 54px;
+    font-weight: normal;
+    color: $color-light;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+  }
+}
