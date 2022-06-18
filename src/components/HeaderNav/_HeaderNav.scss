@@ -103,6 +103,9 @@
   &__submenu {
     @include gridable(min-content);
     @include unmarkedList(0, 0);
+    box-shadow: 0px 5px 5px 5px rgba($color-dark, 0.5);
+    padding: 10px;
+    z-index: 5;
     background-color: $color-dark;
     border-radius: 3px;
     grid-template-rows: repeat(2, 1fr);

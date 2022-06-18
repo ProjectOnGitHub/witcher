@@ -114,6 +114,7 @@ function HeaderNav({ isOpen, onClose, onMobileMenuClick }) {
 }
 
 export default HeaderNav;
+
 HeaderNav.propTypes = {
   isOpen: PropTypes.func,
   onClose: PropTypes.func,
