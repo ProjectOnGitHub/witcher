@@ -1,0 +1,25 @@
+@import '../../scss/_mixins';
+@import '../../scss/_variables';
+
+.promo {
+  @include gridable(100%);
+  max-height: calc(100vh - 80px);
+  height: auto;
+  grid-template-areas: 'layer';
+  overflow: hidden;
+  &__image {
+    @include flexible(100%);
+    grid-area: layer;
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  &__info {
+    grid-area: layer;
+  }
+  &__text {
+    max-width: 50%;
+  }
+}
