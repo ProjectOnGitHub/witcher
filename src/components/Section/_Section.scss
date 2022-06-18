@@ -14,13 +14,21 @@
     align-content: center;
   }
   &__title {
-    font-size: 54px;
-    font-weight: normal;
+    font: normal 54px/2 'RussoOne', Arial, sans-serif;
+    margin: 0;
     color: $color-light;
+    @media screen and (max-width: 480px) {
+      font-size: 48px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 36px;
+    }
   }
   &__text {
-    font-size: 18px;
-    line-height: 1.5;
+    margin: 0;
     width: 100%;
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 }

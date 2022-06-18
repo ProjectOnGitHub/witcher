@@ -21,7 +21,7 @@ function Section(props) {
         </>
       ) : (
         <article className={`section__info ${props.name}__info`}>
-          <h2 className={`section__title ${props.name}__title`}>
+          <h2 className={`section__subtitle ${props.name}__subtitle`}>
             {props.title}
           </h2>
           {props.children}

@@ -15,11 +15,23 @@
     object-fit: cover;
     object-position: center top;
   }
-
   &__info {
     grid-area: layer;
   }
   &__text {
+    box-sizing: border-box;
     max-width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba($color-dark, 0.3);
+    @media screen and (max-width: 768px) {
+      max-width: 70%;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 90%;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
   }
 }
