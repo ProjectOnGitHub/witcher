@@ -4,9 +4,9 @@ import './_Section.scss';
 
 function Section(props) {
   return (
-    <section className={`section ${props.name}`} id={`${props.name}`}>
+    <>
       {props.name === 'promo' ? (
-        <>
+        <section className={`section ${props.name}`} id={`${props.id}`}>
           <img
             className={`${props.name}__image`}
             src={props.image}
@@ -18,21 +18,37 @@ function Section(props) {
             </h1>
             {props.children}
           </article>
-        </>
+        </section>
       ) : (
-        <article className={`section__info ${props.name}__info`}>
-          <h2 className={`section__subtitle ${props.name}__subtitle`}>
-            {props.title}
-          </h2>
-          {props.children}
-        </article>
+        <section
+          className={`section ${props.theme ? `section_${props.theme}` : ''} ${
+            props.name
+          }`}
+          id={`${props.id}`}>
+          <article
+            className={`section__info
+            ${props.theme ? `section__info_${props.theme}` : ''} ${
+              props.name
+            }__info`}>
+            <h2
+              className={`section__subtitle
+              ${props.theme ? `section__subtitle_${props.theme}` : ''} ${
+                props.name
+              }__subtitle`}>
+              {props.title}
+            </h2>
+            {props.children}
+          </article>
+        </section>
       )}
-    </section>
+    </>
   );
 }
 export default Section;
 
 Section.propTypes = {
+  id: PropTypes.string,
+  theme: PropTypes.string,
   name: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,

@@ -6,11 +6,14 @@
   grid-template-columns: 1fr;
   justify-content: center;
   justify-items: center;
+  &_light {
+    background-color: $color-light;
+  }
   &__info {
     @include gridable(100%);
     max-width: $max-width;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 30px 20px;
     align-content: center;
   }
   &__title {
@@ -24,9 +27,19 @@
       font-size: 36px;
     }
   }
+  &__subtitle {
+    text-align: center;
+    font: normal 36px/2 'RussoOne', Arial, sans-serif;
+    &_light {
+      color: $color-dark;
+    }
+  }
   &__text {
     margin: 0;
     width: 100%;
+    &_light {
+      color: $color-dark;
+    }
     @media screen and (max-width: 480px) {
       font-size: 14px;
     }
