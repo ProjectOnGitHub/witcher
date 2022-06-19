@@ -12,6 +12,7 @@ function App() {
     const data = games.map((item) => ({
       id: item.id,
       title: item.title,
+      cover: item.cover,
       url: item.url,
       theme: item.theme,
       year: item.year,

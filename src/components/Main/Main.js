@@ -15,6 +15,7 @@ function Main({ games }) {
           id={game.id}
           url={game.url}
           title={game.title}
+          cover={game.cover}
           theme={game.theme}
           year={game.year}
           platforms={game.platforms}
