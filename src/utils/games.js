@@ -8,6 +8,7 @@ const games = [
   {
     id: 'the-witcher',
     cover: theWitcher,
+    category: 'Основные',
     url: '/',
     title: 'Ведьмак',
     lightTheme: false,
@@ -20,6 +21,7 @@ const games = [
   {
     id: 'the-witcher-2',
     cover: theWitcher2,
+    category: 'Основные',
     url: '/',
     title: 'Ведьмак 2: Убийцы королей',
     lightTheme: true,
@@ -33,6 +35,7 @@ const games = [
   {
     id: 'the-witcher-3',
     cover: theWitcher3,
+    category: 'Основные',
     url: '/',
     title: 'Ведьмак 3: Дикая охота',
     lightTheme: false,
@@ -42,6 +45,7 @@ const games = [
   {
     id: 'hearts-of-stone',
     cover: heartsOfStone,
+    category: 'Основные',
     url: '/',
     title: 'Ведьмак 3: Дикая Охота — Каменные сердца',
     lightTheme: true,
@@ -51,13 +55,53 @@ const games = [
   {
     id: 'blood-and-wine',
     cover: bloodAndWine,
+    category: 'Основные',
     url: '/',
     title: 'Ведьмак 3: Дикая Охота — Кровь и вино',
     lightTheme: false,
     year: 2016,
     platforms: ['PC', 'Xbox One', 'PlayStation 4', 'Nintendo Switch'],
   },
-
+  {
+    id: 'gwent',
+    cover: bloodAndWine,
+    category: 'Онлайн',
+    url: '/online',
+    title: 'Гвинт: Ведьмак. Карточная игра',
+    lightTheme: false,
+    year: 2018,
+    platforms: ['PC', 'iOS', 'Android'],
+  },
+  {
+    id: 'thronebreaker',
+    cover: bloodAndWine,
+    category: 'Онлайн',
+    url: '/online',
+    title: 'Кровная вражда: Ведьмак. Истории',
+    lightTheme: true,
+    year: 2018,
+    platforms: ['PC', 'Xbox One', 'PlayStation 4', 'Nintendo Switch', 'iOS', 'Android'],
+  },
+  {
+    id: 'monster-slayer',
+    cover: bloodAndWine,
+    category: 'Онлайн',
+    url: '/online',
+    title: 'Ведьмак: Охотник на чудовищ',
+    lightTheme: false,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
+  {
+    id: 'adwenture-game',
+    cover: bloodAndWine,
+    category: 'Онлайн',
+    url: '/online',
+    title: 'Ведьмак: Приключенческая игра',
+    lightTheme: false,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
 ];
 
 export default games;
