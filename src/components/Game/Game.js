@@ -5,26 +5,21 @@ import './_Game.scss';
 
 function Game(props) {
   return (
-    <Section
-      key={props.key}
-      name='game'
-      id={props.id}
-      title={props.title}
-      theme={props.theme}>
+    <Section name='game' id={props.id} title={props.title} theme={props.theme}>
       <img
         className={`section__info-image ${
-          props.theme ? `section__info-image_${props.theme}` : ''
+          props.theme ? 'section__info-image_light' : ''
         } ${props.name}__info-image`}
         src={props.cover}
         alt={props.title}
       />
       <div
-        className={`section__text ${
-          props.theme ? `section__text_${props.theme}` : ''
-        } ${props.name}__text`}>
+        className={`section__text ${props.theme ? 'section__text_light' : ''} ${
+          props.name
+        }__text`}>
         <p
           className={`section__paragraph ${
-            props.theme ? `section__paragraph_${props.theme}` : ''
+            props.theme ? 'section__paragraph_light' : ''
           } ${props.name}__paragraph`}>
           Серия компьютерных игр разработана польской компанией CD Projekt RED
           по мотивам одноимённой серии романов польского писателя Анджея
@@ -34,17 +29,7 @@ function Game(props) {
         </p>
         <p
           className={`section__paragraph ${
-            props.theme ? `section__paragraph_${props.theme}` : ''
-          } ${props.name}__paragraph`}>
-          Серия компьютерных игр разработана польской компанией CD Projekt RED
-          по мотивам одноимённой серии романов польского писателя Анджея
-          Сапковского. Релиз первой игры на платформе Windows состоялся 24
-          октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007
-          года — в США. В 2012 году вышла версия для OS X.
-        </p>
-        <p
-          className={`section__paragraph ${
-            props.theme ? `section__paragraph_${props.theme}` : ''
+            props.theme ? 'section__paragraph_light' : ''
           } ${props.name}__paragraph`}>
           Серия компьютерных игр разработана польской компанией CD Projekt RED
           по мотивам одноимённой серии романов польского писателя Анджея
@@ -66,10 +51,9 @@ function Game(props) {
 export default Game;
 
 Game.propTypes = {
-  key: PropTypes.string,
   name: PropTypes.string,
   cover: PropTypes.string,
   id: PropTypes.string,
   title: PropTypes.string,
-  theme: PropTypes.string,
+  theme: PropTypes.bool,
 };

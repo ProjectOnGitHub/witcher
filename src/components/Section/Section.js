@@ -21,18 +21,16 @@ function Section(props) {
         </section>
       ) : (
         <section
-          className={`section ${props.theme ? `section_${props.theme}` : ''} ${
+          className={`section ${props.theme ? 'section_light' : ''} ${
             props.name
           }`}
           id={`${props.id}`}>
           <article
             className={`section__info
-            ${props.theme ? `section__info_${props.theme}` : ''} ${
-              props.name
-            }__info`}>
+            ${props.theme ? 'section__info_ligh' : ''} ${props.name}__info`}>
             <h2
               className={`section__subtitle
-              ${props.theme ? `section__subtitle_${props.theme}` : ''} ${
+              ${props.theme ? 'section__subtitle_light' : ''} ${
                 props.name
               }__subtitle`}>
               {props.title}
@@ -48,7 +46,7 @@ export default Section;
 
 Section.propTypes = {
   id: PropTypes.string,
-  theme: PropTypes.string,
+  theme: PropTypes.bool,
   name: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,

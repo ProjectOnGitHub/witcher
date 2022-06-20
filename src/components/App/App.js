@@ -14,7 +14,7 @@ function App() {
       title: item.title,
       cover: item.cover,
       url: item.url,
-      theme: item.theme,
+      theme: item.lightTheme,
       year: item.year,
       platforms: item.platforms,
     }));
