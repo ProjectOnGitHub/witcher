@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 import './_HeaderMenu.scss';
 
@@ -8,9 +9,9 @@ function HeaderMenu({ isOpen }) {
 
     <ul className={`header__menu ${isOpen ? 'header__menu_opened' : ''}`}>
       <li className='header__menu-item'>
-        <a href='/' className='header__link'>
+        <NavLink to='/' className='header__link'>
           Основные игры <span className='header__menu_drop'></span>
-        </a>
+        </NavLink>
         <ul className='header__submenu'>
           <li className='header__submenu-item'>
             <a href='#' className='header__link'>
@@ -40,9 +41,9 @@ function HeaderMenu({ isOpen }) {
         </ul>
       </li>
       <li className='header__menu-item'>
-        <a href='/online' className='header__link'>
+        <NavLink to='/online' className='header__link'>
           Онлайн-игры <span className='header__menu_drop'></span>
-        </a>
+        </NavLink>
 
         <ul className='header__submenu'>
           <li className='header__submenu-item'>
@@ -68,9 +69,9 @@ function HeaderMenu({ isOpen }) {
         </ul>
       </li>
       <li className='header__menu-item'>
-        <a href='/other' className='header__link'>
+        <NavLink to='/other' className='header__link'>
           Прочие игры <span className='header__menu_drop'></span>
-        </a>
+        </NavLink>
 
         <ul className='header__submenu'>
           <li className='header__submenu-item'>
