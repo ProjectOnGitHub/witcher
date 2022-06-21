@@ -1,4 +1,6 @@
 import { React, useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router';
+import { useLocation } from 'react-router-dom';
 import games from '../../utils/games';
 
 import './_App.scss';
@@ -8,6 +10,7 @@ import Footer from '../Footer/Footer';
 
 function App() {
   const [cards, setCards] = useState([]);
+  const location = useLocation();
   useEffect(() => {
     const data = games.map((item) => ({
       id: item.id,
@@ -23,9 +26,18 @@ function App() {
 
   return (
     <div className='app'>
-      <Header />
-      <Main games={cards} />
-      <Footer />
+      <Switch>
+        <Route exact path='/'>
+          <Header />
+          <Main games={cards} location={location} />
+          <Footer />
+        </Route>
+        <Route exact path='/online'>
+          <Header />
+          <Main games={cards} location={location} />
+          <Footer />
+        </Route>
+      </Switch>
     </div>
   );
 }
