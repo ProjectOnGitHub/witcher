@@ -51,6 +51,9 @@ function Game(props) {
 export default Game;
 
 Game.propTypes = {
+  url: PropTypes.string,
+  pathname: PropTypes.string,
+  location: PropTypes.object,
   name: PropTypes.string,
   cover: PropTypes.string,
   id: PropTypes.string,

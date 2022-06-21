@@ -5,23 +5,30 @@ import Game from '../Game/Game';
 
 import './_Main.scss';
 
-function Main({ games }) {
+function Main({ games, location }) {
+  const path = location.pathname;
   return (
     <main className='main'>
       <Promo />
-      {games.map((game) => (
-        <Game
-          key={game.id}
-          id={game.id}
-          url={game.url}
-          title={game.title}
-          cover={game.cover}
-          theme={game.theme}
-          year={game.year}
-          platforms={game.platforms}
-          name='game'
-        />
-      ))}
+      {games.map((game) => {
+        let component;
+        if (path === `${game.url}`) {
+          component = (
+            <Game
+              key={game.id}
+              id={game.id}
+              url={game.url}
+              title={game.title}
+              cover={game.cover}
+              theme={game.theme}
+              year={game.year}
+              platforms={game.platforms}
+              name='game'
+            />
+          );
+        }
+        return component;
+      })}
     </main>
   );
 }
@@ -30,4 +37,5 @@ export default Main;
 
 Main.propTypes = {
   games: PropTypes.array,
+  location: PropTypes.object,
 };
