@@ -98,10 +98,41 @@ const games = [
     category: 'Онлайн',
     url: '/online',
     title: 'Ведьмак: Приключенческая игра',
+    lightTheme: true,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
+  {
+    id: 'versus',
+    cover: bloodAndWine,
+    category: 'Прочие',
+    url: '/other',
+    title: 'The Witcher: Versus',
     lightTheme: false,
     year: 2021,
     platforms: ['iOS', 'Android'],
   },
+  {
+    id: 'battle-arena',
+    cover: bloodAndWine,
+    category: 'Прочие',
+    url: '/other',
+    title: 'The Witcher Battle Arena',
+    lightTheme: true,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
+  {
+    id: 'rise-of-the-white-wolf',
+    cover: bloodAndWine,
+    category: 'Прочие',
+    url: '/other',
+    title: 'The Witcher: Rise of the White Wolf',
+    lightTheme: false,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
+
 ];
 
 export default games;
