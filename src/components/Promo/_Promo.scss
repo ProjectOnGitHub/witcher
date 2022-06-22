@@ -17,6 +17,11 @@
   }
   &__info {
     grid-area: layer;
+    @include gridable(100%);
+    max-width: $max-width;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    align-content: center;
   }
   &__text {
     box-sizing: border-box;

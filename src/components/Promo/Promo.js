@@ -1,19 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Section from '../Section/Section';
+import Section from '../SectionTest/Section';
 import promoImage from '../../images/background.jpg';
 import './_Promo.scss';
 
-function Promo() {
+function Promo(props) {
   return (
-    <Section name='promo' id='promo' title='О Ведьмаке' image={promoImage}>
-      <p className='section__text promo__text'>
-        Серия компьютерных игр разработана польской компанией CD Projekt RED по
-        мотивам одноимённой серии романов польского писателя Анджея Сапковского.
-        Релиз первой игры на платформе Windows состоялся 24 октября 2007 года —
-        в России, 26 октября — в Европе и 30 октября 2007 года — в США. В 2012
-        году вышла версия для OS X.
-      </p>
+    <Section name='promo' id='promo' image={promoImage}>
+      <img
+        className="promo__image"
+        src={promoImage}
+        alt={props.title}
+      />
+      <article className="promo__info">
+        <h1 className="promo__title">
+          {props.title}
+        </h1>
+        {props.children}
+      </article>
     </Section>
   );
 }
