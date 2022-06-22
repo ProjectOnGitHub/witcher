@@ -9,7 +9,7 @@ function Main({ games, location }) {
   const path = location.pathname;
   return (
     <main className='main'>
-      <Promo />
+      {path === '/' && <Promo />}
       {games.map((game) => {
         let component;
         if (path === `${game.url}`) {

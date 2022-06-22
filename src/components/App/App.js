@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router';
-import { useLocation } from 'react-router-dom';
-import games from '../../utils/games';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import allGames from '../../utils/games';
 
 import './_App.scss';
 import Header from '../Header/Header';
@@ -9,10 +8,10 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 function App() {
-  const [cards, setCards] = useState([]);
+  const [games, setGames] = useState([]);
   const location = useLocation();
   useEffect(() => {
-    const data = games.map((item) => ({
+    const data = allGames.map((item) => ({
       id: item.id,
       title: item.title,
       cover: item.cover,
@@ -21,20 +20,15 @@ function App() {
       year: item.year,
       platforms: item.platforms,
     }));
-    setCards(data);
+    setGames(data);
   }, []);
 
   return (
     <div className='app'>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path={games.map((game) => `${game.url}`)}>
           <Header />
-          <Main games={cards} location={location} />
-          <Footer />
-        </Route>
-        <Route exact path='/online'>
-          <Header />
-          <Main games={cards} location={location} />
+          <Main games={games} location={location} />
           <Footer />
         </Route>
       </Switch>
