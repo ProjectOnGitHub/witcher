@@ -10,7 +10,7 @@ function Main({ games, location }) {
   return (
     <main className='main'>
       {path === '/' && <Promo title="О ведьмаке">
-        <p className='section__text promo__text'>
+        <p className='promo__paragraph'>
           Серия компьютерных игр разработана польской компанией CD Projekt RED по
           мотивам одноимённой серии романов польского писателя Анджея Сапковского.
           Релиз первой игры на платформе Windows состоялся 24 октября 2007 года —

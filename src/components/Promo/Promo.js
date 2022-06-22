@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Section from '../SectionTest/Section';
+import Section from '../Section/Section';
 import promoImage from '../../images/background.jpg';
 import './_Promo.scss';
 

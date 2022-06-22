@@ -7,36 +7,13 @@ function Section(props) {
     <>
       {props.name === 'promo' ? (
         <section className={`section ${props.name}`} id={`${props.id}`}>
-          <img
-            className={`${props.name}__image`}
-            src={props.image}
-            alt={props.title}
-          />
-          <article className={`section__info ${props.name}__info`}>
-            <h1 className={`section__title ${props.name}__title`}>
-              {props.title}
-            </h1>
-            {props.children}
-          </article>
+          {props.children}
         </section>
       ) : (
         <section
-          className={`section ${props.theme ? 'section_light' : ''} ${
-            props.name
-          }`}
+          className={`section ${props.theme ? 'section_light ' : ''}${props.name}`}
           id={`${props.id}`}>
-          <article
-            className={`section__info
-            ${props.theme ? 'section__info_ligh' : ''} ${props.name}__info`}>
-            <h2
-              className={`section__subtitle
-              ${props.theme ? 'section__subtitle_light' : ''} ${
-                props.name
-              }__subtitle`}>
-              {props.title}
-            </h2>
-            {props.children}
-          </article>
+          {props.children}
         </section>
       )}
     </>

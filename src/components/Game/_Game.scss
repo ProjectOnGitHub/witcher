@@ -3,15 +3,20 @@
 
 .game {
   &__info {
-    @include gridable(100%);
+    display: grid;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    align-content: center;
     grid-template-areas:
-      'subtitle subtitle'
+      'title title'
       'text image'
       'platform .';
     gap: 0 30px;
     @media screen and (max-width: 1024px) {
       grid-template-areas:
-        'subtitle'
+        'title'
         'image'
         'text'
         'platform';
@@ -22,6 +27,10 @@
     }
     &-image {
       grid-area: image;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: top center;
       max-width: 700px;
       min-width: 600px;
       width: 100%;
@@ -32,9 +41,12 @@
       }
     }
   }
-  &__subtitle {
-    grid-area: subtitle;
+  &__title {
+    grid-area: title;
     margin-bottom: 30px;
+    font: normal 32px/2 'RussoOne', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
     @media screen and (max-width: 1024px) {
       margin-bottom: 0;
     }
