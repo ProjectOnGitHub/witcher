@@ -5,18 +5,27 @@ import Game from '../Game/Game';
 
 import './_Main.scss';
 
-function Main({ games, location }) {
+function Main({ games, location, pages }) {
   const path = location.pathname;
   return (
     <main className='main'>
-      {path === '/' && <Promo title="О ведьмаке">
-        <p className='promo__paragraph'>
-          Серия компьютерных игр разработана польской компанией CD Projekt RED по
-          мотивам одноимённой серии романов польского писателя Анджея Сапковского.
-          Релиз первой игры на платформе Windows состоялся 24 октября 2007 года —
-          в России, 26 октября — в Европе и 30 октября 2007 года — в США. В 2012
-          году вышла версия для OS X.
-        </p></Promo>}
+      {pages.map((page) => {
+        let component;
+        if (path === `${page.url}`) {
+          component = (
+            <Promo
+              key={page.id}
+              id={page.id}
+              url={page.url}
+              title={page.title}
+              cover={page.cover}
+              text={page.text}
+              name='promo'
+            />
+          );
+        }
+        return component;
+      })}
       {games.map((game) => {
         let component;
         if (path === `${game.url}`) {
@@ -44,5 +53,6 @@ export default Main;
 
 Main.propTypes = {
   games: PropTypes.array,
+  pages: PropTypes.array,
   location: PropTypes.object,
 };
