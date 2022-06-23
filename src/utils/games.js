@@ -3,8 +3,10 @@ import theWitcher2 from '../images/the-witcher-2.jpg';
 import theWitcher3 from '../images/the-witcher-3.jpg';
 import heartsOfStone from '../images/hearts-of-stone.jpg';
 import bloodAndWine from '../images/blood-and-wine.jpg';
+import promoImageMain from '../images/background.jpg';
+import promoImageOnline from '../images/gwent.jpg';
 
-const games = [
+const allGames = [
   {
     id: 'the-witcher',
     cover: theWitcher,
@@ -132,7 +134,52 @@ const games = [
     year: 2021,
     platforms: ['iOS', 'Android'],
   },
-
+  {
+    id: 'crimson trail',
+    cover: bloodAndWine,
+    category: 'Прочие',
+    url: '/other',
+    title: 'The Witcher: Crimson Trail',
+    lightTheme: true,
+    year: 2021,
+    platforms: ['iOS', 'Android'],
+  },
 ];
 
-export default games;
+const allPages = [
+  {
+    id: 'main',
+    cover: promoImageMain,
+    category: 'Основные',
+    url: '/',
+    title: 'О ведьмаке',
+    text: [
+      'Серия компьютерных игр разработана польской компанией CD Projekt RED по мотивам одноимённой серии романов польского писателя Анджея Сапковского. Релиз первой игры на платформе Windows состоялся 24 октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007 года — в США. В 2012 году вышла версия для OS X.',
+    ],
+  },
+  {
+    id: 'online',
+    cover: promoImageOnline,
+    category: 'Онлайн',
+    url: '/online',
+    title: 'Онлайн игры по Ведьмаку',
+    text: [
+      'Серия компьютерных игр разработана польской компанией CD Projekt RED по мотивам одноимённой серии романов польского писателя Анджея Сапковского. Релиз первой игры на платформе Windows состоялся 24 октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007 года — в США. В 2012 году вышла версия для OS X.',
+    ],
+  },
+  {
+    id: 'other',
+    cover: promoImageMain,
+    category: 'Прочие',
+    url: '/other',
+    title: 'Прочие игры по ведьмаку',
+    text: [
+      'Серия компьютерных игр разработана польской компанией CD Projekt RED по мотивам одноимённой серии романов польского писателя Анджея Сапковского. Релиз первой игры на платформе Windows состоялся 24 октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007 года — в США. В 2012 году вышла версия для OS X.',
+    ],
+  },
+];
+
+export {
+  allGames,
+  allPages,
+};

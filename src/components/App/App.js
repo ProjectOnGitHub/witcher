@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
-import allGames from '../../utils/games';
+import { allGames, allPages } from '../../utils/games';
 
 import './_App.scss';
 import Header from '../Header/Header';
@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 
 function App() {
   const [games, setGames] = useState([]);
+  const [pages, setPages] = useState([]);
   const location = useLocation();
   useEffect(() => {
     const data = allGames.map((item) => ({
@@ -23,12 +24,24 @@ function App() {
     setGames(data);
   }, []);
 
+  useEffect(() => {
+    const data = allPages.map((item) => ({
+      id: item.id,
+      url: item.url,
+      cover: item.cover,
+      category: item.category,
+      title: item.title,
+      text: item.text,
+    }));
+    setPages(data);
+  }, []);
+
   return (
     <div className='app'>
       <Switch>
         <Route exact path={games.map((game) => `${game.url}`)}>
           <Header />
-          <Main games={games} location={location} />
+          <Main games={games} pages={pages} location={location} />
           <Footer />
         </Route>
       </Switch>
