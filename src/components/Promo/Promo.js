@@ -11,8 +11,8 @@ function Promo(props) {
         src={props.cover}
         alt={props.title}
       />
-      <article className="promo__info">
-        <h1 className="promo__title">
+      <article className={`${props.name}__info`}>
+        <h1 className={`${props.name}__title`}>
           {props.title}
         </h1>
         {props.text}
