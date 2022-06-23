@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Section from '../Section/Section';
+import Paragraph from '../Paragraph/Paragraph';
 import './_Promo.scss';
 
 function Promo(props) {
@@ -15,7 +16,7 @@ function Promo(props) {
         <h1 className={`${props.name}__title`}>
           {props.title}
         </h1>
-        {props.text}
+        {props.text.map((item) => (<Paragraph name='promo' key={item.length} text={item} />))}
       </article>
     </Section>
   );
@@ -26,7 +27,7 @@ Promo.propTypes = {
   name: PropTypes.string,
   id: PropTypes.string,
   cover: PropTypes.string,
-  text: PropTypes.string,
+  text: PropTypes.array,
   title: PropTypes.string,
 
 };
