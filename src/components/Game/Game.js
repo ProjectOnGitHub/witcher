@@ -5,22 +5,22 @@ import './_Game.scss';
 
 function Game(props) {
   return (
-    <Section name='game' id={props.id} title={props.title} theme={props.theme}>
+    <Section name={props.name} id={props.id} title={props.title} theme={props.theme}>
       <article
-        className='game__info'>
+        className={`${props.name}__info`}>
         <img
-          className='game__info-image'
+          className={`${props.name}__info-image`}
           src={props.cover}
           alt={props.title}
         />
         <h2
-          className='game__title'>
+          className={`${props.name}__title`}>
           {props.title}
         </h2>
         <div
-          className='game__text'>
+          className={`${props.name}__text`}>
           <p
-            className='game__paragraph'>
+            className={`${props.name}__paragraph`}>
             Серия компьютерных игр разработана польской компанией CD Projekt RED
             по мотивам одноимённой серии романов польского писателя Анджея
             Сапковского. Релиз первой игры на платформе Windows состоялся 24
@@ -28,7 +28,7 @@ function Game(props) {
             года — в США. В 2012 году вышла версия для OS X.
           </p>
           <p
-            className='game__paragraph'>
+            className={`${props.name}__paragraph`}>
             Серия компьютерных игр разработана польской компанией CD Projekt RED
             по мотивам одноимённой серии романов польского писателя Анджея
             Сапковского. Релиз первой игры на платформе Windows состоялся 24
@@ -44,7 +44,7 @@ function Game(props) {
           </ul>
         </div>
       </article>
-    </Section>
+    </Section >
   );
 }
 export default Game;
