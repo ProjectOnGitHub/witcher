@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Section from '../Section/Section';
+import Paragraph from '../Paragraph/Paragraph';
 import './_Game.scss';
 
 function Game(props) {
@@ -19,22 +20,7 @@ function Game(props) {
         </h2>
         <div
           className={`${props.name}__text`}>
-          <p
-            className={`${props.name}__paragraph`}>
-            Серия компьютерных игр разработана польской компанией CD Projekt RED
-            по мотивам одноимённой серии романов польского писателя Анджея
-            Сапковского. Релиз первой игры на платформе Windows состоялся 24
-            октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007
-            года — в США. В 2012 году вышла версия для OS X.
-          </p>
-          <p
-            className={`${props.name}__paragraph`}>
-            Серия компьютерных игр разработана польской компанией CD Projekt RED
-            по мотивам одноимённой серии романов польского писателя Анджея
-            Сапковского. Релиз первой игры на платформе Windows состоялся 24
-            октября 2007 года — в России, 26 октября — в Европе и 30 октября 2007
-            года — в США. В 2012 году вышла версия для OS X.
-          </p>
+          {props.text.map((item) => (<Paragraph name='game' key={item.length} text={item} />))}
         </div>
         <div className='game__platform'>
           <h4 className='game__platform-title'>Доступно на:</h4>
@@ -51,6 +37,7 @@ export default Game;
 
 Game.propTypes = {
   url: PropTypes.string,
+  text: PropTypes.array,
   pathname: PropTypes.string,
   location: PropTypes.object,
   name: PropTypes.string,

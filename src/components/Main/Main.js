@@ -29,6 +29,7 @@ function Main({ games, location, pages }) {
       {games.map((game) => {
         let component;
         if (path === `${game.url}`) {
+          console.log(games);
           component = (
             <Game
               key={game.id}
@@ -37,6 +38,7 @@ function Main({ games, location, pages }) {
               title={game.title}
               cover={game.cover}
               theme={game.theme}
+              text={game.text}
               year={game.year}
               platforms={game.platforms}
               name='game'

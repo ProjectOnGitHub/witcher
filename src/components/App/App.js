@@ -20,6 +20,7 @@ function App() {
       theme: item.lightTheme,
       year: item.year,
       platforms: item.platforms,
+      text: item.text,
     }));
     setGames(data);
   }, []);
