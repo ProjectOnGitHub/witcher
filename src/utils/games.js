@@ -5,6 +5,7 @@ import heartsOfStone from '../images/hearts-of-stone.jpg';
 import bloodAndWine from '../images/blood-and-wine.jpg';
 import promoImageMain from '../images/background.jpg';
 import promoImageOnline from '../images/gwent.jpg';
+import promoImageOther from '../images/adventure.jpg';
 
 const allGames = [
   {
@@ -196,6 +197,7 @@ const allGames = [
 const allPages = [
   {
     id: 'main',
+    title: 'Основные игры по вселенной Ведьмака',
     cover: promoImageMain,
     category: 'Основные',
     url: '/',
@@ -206,6 +208,7 @@ const allPages = [
   },
   {
     id: 'online',
+    title: 'Онлайн-игры по вселенной Ведьмака',
     cover: promoImageOnline,
     category: 'Онлайн',
     url: '/online',
@@ -216,7 +219,8 @@ const allPages = [
   },
   {
     id: 'other',
-    cover: promoImageMain,
+    cover: promoImageOther,
+    title: 'Прочие игры по вселенной Ведьмака',
     category: 'Прочие',
     url: '/other',
     heading: 'Прочие игры по ведьмаку',
