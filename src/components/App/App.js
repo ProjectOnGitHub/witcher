@@ -1,5 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 import { allGames, allPages } from '../../utils/games';
 
 import './_App.scss';
@@ -30,6 +32,7 @@ function App() {
       id: item.id,
       url: item.url,
       cover: item.cover,
+      title: item.title,
       category: item.category,
       heading: item.heading,
       text: item.text,
@@ -41,6 +44,7 @@ function App() {
     <div className='app'>
       <Switch>
         <Route exact path={games.map((game) => `${game.url}`)}>
+          <Helmet title={pages.map((page) => (page.url === location.pathname ? `${page.title}` : ''))} />
           <Header />
           <Main games={games} pages={pages} location={location} />
           <Footer />
