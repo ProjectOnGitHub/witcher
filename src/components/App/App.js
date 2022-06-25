@@ -18,6 +18,7 @@ function App() {
     const data = allGames.map((item) => ({
       id: item.id,
       heading: item.heading,
+      category: item.category,
       cover: item.cover,
       url: item.url,
       theme: item.lightTheme,
@@ -46,7 +47,7 @@ function App() {
       <Switch>
         <Route exact path={games.map((game) => `${game.url}`)}>
           <Helmet title={pages.map((page) => (page.url === path ? `${page.title}` : ''))} />
-          <Header />
+          <Header games={games} pages={pages} path={path} />
           <Main games={games} pages={pages} path={path} />
           <Footer />
         </Route>

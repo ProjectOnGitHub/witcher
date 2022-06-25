@@ -11,7 +11,7 @@ const allGames = [
   {
     id: 'the-witcher',
     cover: theWitcher,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'Ведьмак',
     lightTheme: false,
@@ -26,7 +26,7 @@ const allGames = [
   {
     id: 'the-witcher-2',
     cover: theWitcher2,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'Ведьмак 2: Убийцы королей',
     lightTheme: true,
@@ -40,7 +40,7 @@ const allGames = [
   {
     id: 'the-witcher-3',
     cover: theWitcher3,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'Ведьмак 3: Дикая охота',
     lightTheme: false,
@@ -54,7 +54,7 @@ const allGames = [
   {
     id: 'hearts-of-stone',
     cover: heartsOfStone,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'Ведьмак 3: Дикая Охота — Каменные сердца',
     lightTheme: true,
@@ -69,7 +69,7 @@ const allGames = [
   {
     id: 'blood-and-wine',
     cover: bloodAndWine,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'Ведьмак 3: Дикая Охота — Кровь и вино',
     lightTheme: false,
@@ -83,7 +83,7 @@ const allGames = [
   {
     id: 'gwent',
     cover: bloodAndWine,
-    category: 'Онлайн',
+    category: 'Онлайн игры',
     url: '/online',
     heading: 'Гвинт: Ведьмак. Карточная игра',
     lightTheme: false,
@@ -98,7 +98,7 @@ const allGames = [
   {
     id: 'thronebreaker',
     cover: bloodAndWine,
-    category: 'Онлайн',
+    category: 'Онлайн игры',
     url: '/online',
     heading: 'Кровная вражда: Ведьмак. Истории',
     lightTheme: true,
@@ -113,7 +113,7 @@ const allGames = [
   {
     id: 'monster-slayer',
     cover: bloodAndWine,
-    category: 'Онлайн',
+    category: 'Онлайн игры',
     url: '/online',
     heading: 'Ведьмак: Охотник на чудовищ',
     lightTheme: false,
@@ -129,7 +129,7 @@ const allGames = [
   {
     id: 'adwenture-game',
     cover: bloodAndWine,
-    category: 'Онлайн',
+    category: 'Онлайн игры',
     url: '/online',
     heading: 'Ведьмак: Приключенческая игра',
     lightTheme: true,
@@ -143,7 +143,7 @@ const allGames = [
   {
     id: 'versus',
     cover: bloodAndWine,
-    category: 'Прочие',
+    category: 'Прочие игры',
     url: '/other',
     heading: 'The Witcher: Versus',
     lightTheme: false,
@@ -156,7 +156,7 @@ const allGames = [
   {
     id: 'battle-arena',
     cover: bloodAndWine,
-    category: 'Прочие',
+    category: 'Прочие игры',
     url: '/other',
     heading: 'The Witcher Battle Arena',
     lightTheme: true,
@@ -169,7 +169,7 @@ const allGames = [
   {
     id: 'rise-of-the-white-wolf',
     cover: bloodAndWine,
-    category: 'Прочие',
+    category: 'Прочие игры',
     url: '/other',
     heading: 'The Witcher: Rise of the White Wolf',
     lightTheme: false,
@@ -180,9 +180,9 @@ const allGames = [
     ],
   },
   {
-    id: 'crimson trail',
+    id: 'crimson-trail',
     cover: bloodAndWine,
-    category: 'Прочие',
+    category: 'Прочие игры',
     url: '/other',
     heading: 'The Witcher: Crimson Trail',
     lightTheme: true,
@@ -199,7 +199,7 @@ const allPages = [
     id: 'main',
     title: 'Основные игры по вселенной Ведьмака',
     cover: promoImageMain,
-    category: 'Основные',
+    category: 'Основные игры',
     url: '/',
     heading: 'О ведьмаке',
     text: [
@@ -210,7 +210,7 @@ const allPages = [
     id: 'online',
     title: 'Онлайн-игры по вселенной Ведьмака',
     cover: promoImageOnline,
-    category: 'Онлайн',
+    category: 'Онлайн игры',
     url: '/online',
     heading: 'Онлайн игры по Ведьмаку',
     text: [
@@ -221,7 +221,7 @@ const allPages = [
     id: 'other',
     cover: promoImageOther,
     title: 'Прочие игры по вселенной Ведьмака',
-    category: 'Прочие',
+    category: 'Прочие игры',
     url: '/other',
     heading: 'Прочие игры по ведьмаку',
     text: [

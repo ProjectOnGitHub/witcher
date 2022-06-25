@@ -5,25 +5,32 @@ import Button from '../Button/Button';
 import HeaderMenu from '../HeaderMenu/HeaderMenu';
 import './_HeaderNav.scss';
 
-function HeaderNav({ isOpen, onClose, onMobileMenuClick }) {
+function HeaderNav(props) {
   return (
     <>
       <Navigation name='header'>
         <div
           className={`header__navigation-overlay ${
-            isOpen ? 'header__navigation-overlay_active' : ''
+            props.isOpen ? 'header__navigation-overlay_active' : ''
           }`}
-          onClick={isOpen ? onClose : onMobileMenuClick}></div>
-        <HeaderMenu isOpen={isOpen} />
+          onClick={
+            props.isOpen ? props.onClose : props.onMobileMenuClick
+          }></div>
+        <HeaderMenu
+          isOpen={props.isOpen}
+          games={props.games}
+          pages={props.pages}
+          path={props.path}
+        />
       </Navigation>
       <Button
         mix={'header__menu-button'}
         type='button'
         name='mobile-menu'
         aria-label='mobile menu'
-        isOpen={isOpen}
-        onClose={onClose}
-        onMobileMenuClick={onMobileMenuClick}
+        isOpen={props.isOpen}
+        onClose={props.onClose}
+        onMobileMenuClick={props.onMobileMenuClick}
       />
     </>
   );
@@ -32,6 +39,9 @@ function HeaderNav({ isOpen, onClose, onMobileMenuClick }) {
 export default HeaderNav;
 
 HeaderNav.propTypes = {
+  pages: PropTypes.array,
+  games: PropTypes.array,
+  path: PropTypes.func,
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
   onMobileMenuClick: PropTypes.func,

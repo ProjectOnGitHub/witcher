@@ -1,9 +1,10 @@
 import { React, useState } from 'react';
+import PropTypes from 'prop-types';
 import headerLogo from '../../images/logo.png';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import './_Header.scss';
 
-function Header() {
+function Header({ games, pages, path }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   function closeMobileMenu() {
@@ -22,6 +23,9 @@ function Header() {
           isOpen={isMobileMenuOpen}
           onClose={closeMobileMenu}
           onMobileMenuClick={handleMobileMenuClick}
+          games={games}
+          pages={pages}
+          path={path}
         />
       </div>
     </header>
@@ -29,3 +33,11 @@ function Header() {
 }
 
 export default Header;
+
+Header.propTypes = {
+  pages: PropTypes.array,
+  games: PropTypes.array,
+  isOpen: PropTypes.bool,
+  onClose: PropTypes.func,
+  path: PropTypes.func,
+};
