@@ -19,4 +19,15 @@
     width: 48px;
     height: auto;
   }
+  &__link {
+    @include flexible(min-content);
+    align-items: center;
+    gap: 5px;
+    @include defaultLink();
+    color: $color-light;
+    &:hover {
+      text-decoration: underline;
+      color: $color-red;
+    }
+  }
 }

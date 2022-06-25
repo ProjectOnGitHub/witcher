@@ -2,104 +2,6 @@
 @import '../../scss/_variables';
 
 .header {
-  &__navigation {
-    @include flexible(min-content);
-    justify-content: space-between;
-    align-items: center;
-    &-overlay {
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      right: -150%;
-      display: block;
-      visibility: hidden;
-      width: 100%;
-      height: 100vh;
-      transition: 0.5s;
-      opacity: 0;
-      background: $color-dark;
-      &_active {
-        cursor: pointer;
-        right: 0;
-        visibility: visible;
-        opacity: 0.6;
-        transition: 0.5s;
-      }
-    }
-  }
-  &__menu {
-    @include gridable(100%);
-    @include unmarkedList(0, 0);
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-    gap: 40px;
-    position: relative;
-    @media screen and (max-width: 768px) {
-      z-index: 5;
-      grid-template-columns: 1fr;
-      gap: 5px;
-      position: fixed;
-      padding-top: 80px;
-      z-index: 1;
-      top: 0;
-      right: -320px;
-      visibility: hidden;
-      align-content: start;
-      align-items: center;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 320px;
-      height: 100vh;
-      transition: 0.5s;
-      opacity: 0;
-      background-color: $color-dark;
-      font-size: 32px;
-      padding-left: 20px;
-      &_opened {
-        right: 0;
-        visibility: visible;
-        transition: 0.5s;
-        opacity: 1;
-      }
-    }
-    &-button {
-      opacity: 0;
-      display: none;
-      width: 32px;
-      height: 32px;
-      background-image: url(../../images/mobile-menu-icon.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      z-index: 10;
-      transition: 0.5s;
-      &_opened {
-        transform: rotate(90deg);
-      }
-      @media screen and (max-width: 768px) {
-        opacity: 1;
-        display: flex;
-      }
-    }
-    &-item {
-      @include gridable(min-content);
-      align-items: center;
-      align-content: center;
-      gap: 0 5px;
-      font-size: 12px;
-      text-transform: uppercase;
-      &:hover .header__submenu {
-        visibility: visible;
-        opacity: 1;
-        @media screen and (max-width: 768px) {
-          height: 100%;
-        }
-      }
-      &:hover .header__menu_drop {
-        border-top: none;
-        border-bottom: 4px solid $color-light;
-      }
-    }
-  }
   &__submenu {
     @include gridable(min-content);
     @include unmarkedList(0, 0);
@@ -126,24 +28,5 @@
       height: 0;
       overflow: hidden;
     }
-  }
-  &__link {
-    @include flexible(min-content);
-    align-items: center;
-    gap: 5px;
-    @include defaultLink();
-    color: $color-light;
-    &:hover {
-      text-decoration: underline;
-      color: $color-red;
-    }
-  }
-  &__menu_drop {
-    transition: 0.5s;
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid $color-light;
   }
 }

@@ -4,21 +4,19 @@ import HeaderMenuItem from '../HeaderMenuItem/HeaderMenuItem';
 
 import './_HeaderMenu.scss';
 
-function HeaderMenu({
-  isOpen, games, pages, path,
-}) {
+function HeaderMenu({ isOpen, games, pages, path }) {
   return (
     <ul className={`header__menu ${isOpen ? 'header__menu_opened' : ''}`}>
-      {pages.map((page) => (<HeaderMenuItem
-        key={page.id}
-        url={page.url}
-        category={page.category}
-        path={path}
-        games={games}
-      />
+      {pages.map((page) => (
+        <HeaderMenuItem
+          key={page.id}
+          url={page.url}
+          category={page.category}
+          path={path}
+          games={games}
+        />
       ))}
     </ul>
-
   );
 }
 
