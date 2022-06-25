@@ -17,7 +17,7 @@ function Main({ games, location, pages }) {
               key={page.id}
               id={page.id}
               url={page.url}
-              title={page.title}
+              heading={page.heading}
               cover={page.cover}
               text={page.text}
               name='promo'
@@ -35,7 +35,7 @@ function Main({ games, location, pages }) {
               key={game.id}
               id={game.id}
               url={game.url}
-              title={game.title}
+              heading={game.heading}
               cover={game.cover}
               theme={game.theme}
               text={game.text}

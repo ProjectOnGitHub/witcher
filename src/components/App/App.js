@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const data = allGames.map((item) => ({
       id: item.id,
-      title: item.title,
+      heading: item.heading,
       cover: item.cover,
       url: item.url,
       theme: item.lightTheme,
@@ -31,7 +31,7 @@ function App() {
       url: item.url,
       cover: item.cover,
       category: item.category,
-      title: item.title,
+      heading: item.heading,
       text: item.text,
     }));
     setPages(data);
