@@ -13,6 +13,7 @@ function App() {
   const [games, setGames] = useState([]);
   const [pages, setPages] = useState([]);
   const location = useLocation();
+  const path = location.pathname;
   useEffect(() => {
     const data = allGames.map((item) => ({
       id: item.id,
@@ -44,9 +45,9 @@ function App() {
     <div className='app'>
       <Switch>
         <Route exact path={games.map((game) => `${game.url}`)}>
-          <Helmet title={pages.map((page) => (page.url === location.pathname ? `${page.title}` : ''))} />
+          <Helmet title={pages.map((page) => (page.url === path ? `${page.title}` : ''))} />
           <Header />
-          <Main games={games} pages={pages} location={location} />
+          <Main games={games} pages={pages} path={path} />
           <Footer />
         </Route>
       </Switch>

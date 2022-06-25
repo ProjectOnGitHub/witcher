@@ -5,8 +5,7 @@ import Game from '../Game/Game';
 
 import './_Main.scss';
 
-function Main({ games, location, pages }) {
-  const path = location.pathname;
+function Main({ games, path, pages }) {
   return (
     <main className='main'>
       {pages.map((page) => {
@@ -56,5 +55,5 @@ export default Main;
 Main.propTypes = {
   games: PropTypes.array,
   pages: PropTypes.array,
-  location: PropTypes.object,
+  path: PropTypes.object,
 };
