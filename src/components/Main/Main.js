@@ -28,7 +28,6 @@ function Main({ games, path, pages }) {
       {games.map((game) => {
         let component;
         if (path === `${game.url}`) {
-          console.log(games);
           component = (
             <Game
               key={game.id}
