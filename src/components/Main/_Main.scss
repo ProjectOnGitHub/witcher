@@ -1,7 +1,0 @@
-@import '../../scss/_mixins';
-@import '../../scss/_variables';
-
-.main {
-  @include gridable(100%);
-  grid-template-columns: 1fr;
-}

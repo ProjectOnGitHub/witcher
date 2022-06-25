@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18e6a5bb.chunk.css",
+    "main.js": "/static/js/main.7aeb3d58.chunk.js",
+    "main.js.map": "/static/js/main.7aeb3d58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.831b60ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.831b60ba.js.map",
+    "static/js/2.f3410b10.chunk.js": "/static/js/2.f3410b10.chunk.js",
+    "static/js/2.f3410b10.chunk.js.map": "/static/js/2.f3410b10.chunk.js.map",
+    "static/js/3.f612d181.chunk.js": "/static/js/3.f612d181.chunk.js",
+    "static/js/3.f612d181.chunk.js.map": "/static/js/3.f612d181.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.18e6a5bb.chunk.css.map": "/static/css/main.18e6a5bb.chunk.css.map",
+    "static/js/2.f3410b10.chunk.js.LICENSE.txt": "/static/js/2.f3410b10.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/RussoOne-Regular.97dc6f09.woff",
+    "static/media/adventure.c267f5a3.jpg": "/static/media/adventure.c267f5a3.jpg",
+    "static/media/background.45d3c566.jpg": "/static/media/background.45d3c566.jpg",
+    "static/media/blood-and-wine.cfa06e98.jpg": "/static/media/blood-and-wine.cfa06e98.jpg",
+    "static/media/gwent.f4509b1a.jpg": "/static/media/gwent.f4509b1a.jpg",
+    "static/media/hearts-of-stone.573a13b9.jpg": "/static/media/hearts-of-stone.573a13b9.jpg",
+    "static/media/logo.dc41e6cd.png": "/static/media/logo.dc41e6cd.png",
+    "static/media/_HeaderNav.scss": "/static/media/mobile-menu-icon.f7e460bf.svg",
+    "static/media/the-witcher-2.23d1f2bb.jpg": "/static/media/the-witcher-2.23d1f2bb.jpg",
+    "static/media/the-witcher-3.b2487b06.jpg": "/static/media/the-witcher-3.b2487b06.jpg",
+    "static/media/the-witcher.ff9cb0be.jpg": "/static/media/the-witcher.ff9cb0be.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.831b60ba.js",
+    "static/js/2.f3410b10.chunk.js",
+    "static/css/main.18e6a5bb.chunk.css",
+    "static/js/main.7aeb3d58.chunk.js"
+  ]
+}
