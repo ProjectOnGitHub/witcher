@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4804cf7f.chunk.css",
+    "main.css": "/static/css/main.9fa0bcfb.chunk.css",
     "main.js": "/static/js/main.f19a2a33.chunk.js",
     "main.js.map": "/static/js/main.f19a2a33.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a5aceedc.js",
@@ -10,7 +10,7 @@
     "static/js/3.832dc110.chunk.js": "/static/js/3.832dc110.chunk.js",
     "static/js/3.832dc110.chunk.js.map": "/static/js/3.832dc110.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4804cf7f.chunk.css.map": "/static/css/main.4804cf7f.chunk.css.map",
+    "static/css/main.9fa0bcfb.chunk.css.map": "/static/css/main.9fa0bcfb.chunk.css.map",
     "static/js/2.a8e49741.chunk.js.LICENSE.txt": "/static/js/2.a8e49741.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/RussoOne-Regular.97dc6f09.woff",
     "static/media/adventure.66f49ea3.jpg": "/static/media/adventure.66f49ea3.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5aceedc.js",
     "static/js/2.a8e49741.chunk.js",
-    "static/css/main.4804cf7f.chunk.css",
+    "static/css/main.9fa0bcfb.chunk.css",
     "static/js/main.f19a2a33.chunk.js"
   ]
 }
