@@ -21,6 +21,7 @@ function HeaderNav(props) {
           games={props.games}
           pages={props.pages}
           path={props.path}
+          onClose={props.onClose}
         />
       </Navigation>
       <Button

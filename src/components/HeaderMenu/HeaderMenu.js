@@ -14,6 +14,7 @@ function HeaderMenu(props) {
           category={page.category}
           path={props.path}
           games={props.games}
+          onClose={props.onClose}
         />
       ))}
     </ul>
