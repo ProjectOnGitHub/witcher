@@ -45,7 +45,7 @@
       background-image: url(../../images/mobile-menu-icon.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      background-color: $color-dark;
+      background-color: rgba($color-dark, 0.3);
       padding: 2px;
       border-radius: 5px;
       z-index: 10;
