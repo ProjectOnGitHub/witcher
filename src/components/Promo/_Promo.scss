@@ -23,6 +23,7 @@
     padding: 30px 20px;
     align-content: center;
     gap: 30px;
+    max-height: calc(100vh - 80px);
   }
   &__heading {
     font: normal 54px/1.5 'RussoOne', Arial, sans-serif;
