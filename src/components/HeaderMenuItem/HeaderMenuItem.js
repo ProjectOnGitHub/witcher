@@ -8,7 +8,7 @@ import './_HeaderMenuItem.scss';
 function HeaderMenuItem(props) {
   return (
     <li className='header__menu-item' onClick={props.onClose}>
-      <NavLink to={props.url} className='header__link'>
+      <NavLink exact to={props.url} className='header__link' activeClassName='header__link_active'>
         {props.category} <span className='header__menu_drop'></span>
       </NavLink>
       <ul className='header__submenu'>
@@ -39,5 +39,5 @@ HeaderMenuItem.propTypes = {
   onClose: PropTypes.func,
   pages: PropTypes.array,
   games: PropTypes.array,
-  path: PropTypes.func,
+  path: PropTypes.string,
 };

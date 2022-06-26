@@ -39,5 +39,5 @@ Header.propTypes = {
   games: PropTypes.array,
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
-  path: PropTypes.func,
+  path: PropTypes.string,
 };

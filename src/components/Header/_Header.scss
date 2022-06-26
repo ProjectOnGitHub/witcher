@@ -25,6 +25,10 @@
     gap: 5px;
     @include defaultLink();
     color: $color-light;
+    &_active {
+      text-decoration: underline;
+      color: $color-red;
+    }
     &:hover {
       text-decoration: underline;
       color: $color-red;
