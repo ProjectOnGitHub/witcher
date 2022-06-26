@@ -54,5 +54,5 @@ export default Main;
 Main.propTypes = {
   games: PropTypes.array,
   pages: PropTypes.array,
-  path: PropTypes.object,
+  path: PropTypes.string,
 };

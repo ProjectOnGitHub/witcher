@@ -42,7 +42,7 @@ export default HeaderNav;
 HeaderNav.propTypes = {
   pages: PropTypes.array,
   games: PropTypes.array,
-  path: PropTypes.func,
+  path: PropTypes.string,
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
   onMobileMenuClick: PropTypes.func,

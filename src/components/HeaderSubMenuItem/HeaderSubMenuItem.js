@@ -21,5 +21,5 @@ HeaderSubMenuItem.propTypes = {
   category: PropTypes.string,
   pages: PropTypes.array,
   games: PropTypes.array,
-  path: PropTypes.func,
+  path: PropTypes.string,
 };
