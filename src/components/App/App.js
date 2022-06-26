@@ -46,7 +46,9 @@ function App() {
     <div className='app'>
       <Switch>
         <Route exact path={games.map((game) => `${game.url}`)}>
-          <Helmet title={pages.map((page) => (page.url === path ? `${page.title}` : ''))} />
+          <Helmet>
+            {pages.map((page) => (page.url === path ? <title key={page.url}>{page.title}</title> : ''))}
+          </Helmet>
           <Header games={games} pages={pages} path={path} />
           <Main games={games} pages={pages} path={path} />
           <Footer />
