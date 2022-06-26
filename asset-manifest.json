@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a382e501.chunk.css",
-    "main.js": "/static/js/main.9dd04598.chunk.js",
-    "main.js.map": "/static/js/main.9dd04598.chunk.js.map",
+    "main.css": "/static/css/main.4804cf7f.chunk.css",
+    "main.js": "/static/js/main.f19a2a33.chunk.js",
+    "main.js.map": "/static/js/main.f19a2a33.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a5aceedc.js",
     "runtime-main.js.map": "/static/js/runtime-main.a5aceedc.js.map",
     "static/js/2.a8e49741.chunk.js": "/static/js/2.a8e49741.chunk.js",
@@ -10,24 +10,24 @@
     "static/js/3.832dc110.chunk.js": "/static/js/3.832dc110.chunk.js",
     "static/js/3.832dc110.chunk.js.map": "/static/js/3.832dc110.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a382e501.chunk.css.map": "/static/css/main.a382e501.chunk.css.map",
+    "static/css/main.4804cf7f.chunk.css.map": "/static/css/main.4804cf7f.chunk.css.map",
     "static/js/2.a8e49741.chunk.js.LICENSE.txt": "/static/js/2.a8e49741.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/RussoOne-Regular.97dc6f09.woff",
-    "static/media/adventure.c267f5a3.jpg": "/static/media/adventure.c267f5a3.jpg",
-    "static/media/background.45d3c566.jpg": "/static/media/background.45d3c566.jpg",
-    "static/media/blood-and-wine.cfa06e98.jpg": "/static/media/blood-and-wine.cfa06e98.jpg",
-    "static/media/gwent.f4509b1a.jpg": "/static/media/gwent.f4509b1a.jpg",
-    "static/media/hearts-of-stone.573a13b9.jpg": "/static/media/hearts-of-stone.573a13b9.jpg",
-    "static/media/logo.dc41e6cd.png": "/static/media/logo.dc41e6cd.png",
+    "static/media/adventure.66f49ea3.jpg": "/static/media/adventure.66f49ea3.jpg",
+    "static/media/background.2a535d15.jpg": "/static/media/background.2a535d15.jpg",
+    "static/media/blood-and-wine.1a8260b1.jpg": "/static/media/blood-and-wine.1a8260b1.jpg",
+    "static/media/gwent.e3ade8b1.jpg": "/static/media/gwent.e3ade8b1.jpg",
+    "static/media/hearts-of-stone.5dd986cd.jpg": "/static/media/hearts-of-stone.5dd986cd.jpg",
+    "static/media/logo.41c6fecb.png": "/static/media/logo.41c6fecb.png",
     "static/media/_HeaderMenu.scss": "/static/media/mobile-menu-icon.f7e460bf.svg",
-    "static/media/the-witcher-2.23d1f2bb.jpg": "/static/media/the-witcher-2.23d1f2bb.jpg",
-    "static/media/the-witcher-3.b2487b06.jpg": "/static/media/the-witcher-3.b2487b06.jpg",
-    "static/media/the-witcher.ff9cb0be.jpg": "/static/media/the-witcher.ff9cb0be.jpg"
+    "static/media/the-witcher-2.96a079a6.jpg": "/static/media/the-witcher-2.96a079a6.jpg",
+    "static/media/the-witcher-3.65c1f27d.jpg": "/static/media/the-witcher-3.65c1f27d.jpg",
+    "static/media/the-witcher.09218fae.jpg": "/static/media/the-witcher.09218fae.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a5aceedc.js",
     "static/js/2.a8e49741.chunk.js",
-    "static/css/main.a382e501.chunk.css",
-    "static/js/main.9dd04598.chunk.js"
+    "static/css/main.4804cf7f.chunk.css",
+    "static/js/main.f19a2a33.chunk.js"
   ]
 }
