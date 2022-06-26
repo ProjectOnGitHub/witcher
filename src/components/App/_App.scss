@@ -1,6 +1,10 @@
 @import '../../scss/mixins';
 @import '../../scss/variables';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   @include gridable(100%);
   grid-template-columns: 1fr;
