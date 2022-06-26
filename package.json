@@ -1,5 +1,6 @@
 {
   "name": "witcher",
+  "homepage": "https://witcher.wbdv.ru",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
