@@ -21,12 +21,15 @@
     right: 0;
     transition: 0.5s;
     @media screen and (max-width: 768px) {
+      padding: 0 0 0 10px;
       position: static;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-auto-flow: unset;
-      height: 0;
-      overflow: hidden;
+      height: 100%;
+      gap: 3px;
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

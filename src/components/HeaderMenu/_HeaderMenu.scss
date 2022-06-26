@@ -14,7 +14,7 @@
       grid-template-columns: 1fr;
       gap: 5px;
       position: fixed;
-      padding-top: 80px;
+      padding-top: $header-height;
       z-index: 1;
       top: 0;
       right: -320px;
@@ -45,8 +45,14 @@
       background-image: url(../../images/mobile-menu-icon.svg);
       background-repeat: no-repeat;
       background-size: contain;
+      background-color: $color-dark;
+      padding: 2px;
+      border-radius: 5px;
       z-index: 10;
       transition: 0.5s;
+      position: fixed;
+      top: auto;
+      right: 20px;
       &_opened {
         transform: rotate(90deg);
       }
