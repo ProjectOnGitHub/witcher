@@ -22,10 +22,11 @@
     box-sizing: border-box;
     padding: 30px 20px;
     align-content: center;
+    gap: 10px;
     max-height: calc(100vh - $header-height);
   }
   &__heading {
-    font: normal 54px/1 'RussoOne', Arial, sans-serif;
+    font: normal 48px/1 'RussoOne', Arial, sans-serif;
     margin: 0;
     color: $color-light;
     @media screen and (max-width: 480px) {
