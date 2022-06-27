@@ -127,7 +127,7 @@ const allGames = [
     ],
   },
   {
-    id: 'adwenture-game',
+    id: 'adventure-game',
     cover: bloodAndWine,
     category: 'Онлайн игры',
     url: '/online',
