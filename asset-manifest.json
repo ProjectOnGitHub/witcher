@@ -1,33 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.56fb679a.chunk.css",
-    "main.js": "/static/js/main.4848efbe.chunk.js",
-    "main.js.map": "/static/js/main.4848efbe.chunk.js.map",
+    "main.css": "/static/css/main.b7df87f9.chunk.css",
+    "main.js": "/static/js/main.7b383642.chunk.js",
+    "main.js.map": "/static/js/main.7b383642.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.85a27ad2.js",
     "runtime-main.js.map": "/static/js/runtime-main.85a27ad2.js.map",
-    "static/js/2.7ab57d4f.chunk.js": "/static/js/2.7ab57d4f.chunk.js",
-    "static/js/2.7ab57d4f.chunk.js.map": "/static/js/2.7ab57d4f.chunk.js.map",
+    "static/js/2.ea50e079.chunk.js": "/static/js/2.ea50e079.chunk.js",
+    "static/js/2.ea50e079.chunk.js.map": "/static/js/2.ea50e079.chunk.js.map",
     "static/js/3.611fbc6f.chunk.js": "/static/js/3.611fbc6f.chunk.js",
     "static/js/3.611fbc6f.chunk.js.map": "/static/js/3.611fbc6f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.56fb679a.chunk.css.map": "/static/css/main.56fb679a.chunk.css.map",
-    "static/js/2.7ab57d4f.chunk.js.LICENSE.txt": "/static/js/2.7ab57d4f.chunk.js.LICENSE.txt",
+    "static/css/main.b7df87f9.chunk.css.map": "/static/css/main.b7df87f9.chunk.css.map",
+    "static/js/2.ea50e079.chunk.js.LICENSE.txt": "/static/js/2.ea50e079.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/RussoOne-Regular.97dc6f09.woff",
+    "static/media/adventure-small.7f34eb9e.jpg": "/static/media/adventure-small.7f34eb9e.jpg",
     "static/media/adventure.66f49ea3.jpg": "/static/media/adventure.66f49ea3.jpg",
-    "static/media/background.2a535d15.jpg": "/static/media/background.2a535d15.jpg",
     "static/media/blood-and-wine.1a8260b1.jpg": "/static/media/blood-and-wine.1a8260b1.jpg",
+    "static/media/gwent-small.b7c411e3.jpg": "/static/media/gwent-small.b7c411e3.jpg",
     "static/media/gwent.e3ade8b1.jpg": "/static/media/gwent.e3ade8b1.jpg",
     "static/media/hearts-of-stone.5dd986cd.jpg": "/static/media/hearts-of-stone.5dd986cd.jpg",
     "static/media/logo.41c6fecb.png": "/static/media/logo.41c6fecb.png",
     "static/media/_HeaderMenu.scss": "/static/media/mobile-menu-icon.f7e460bf.svg",
     "static/media/the-witcher-2.96a079a6.jpg": "/static/media/the-witcher-2.96a079a6.jpg",
     "static/media/the-witcher-3.65c1f27d.jpg": "/static/media/the-witcher-3.65c1f27d.jpg",
-    "static/media/the-witcher.09218fae.jpg": "/static/media/the-witcher.09218fae.jpg"
+    "static/media/the-witcher.09218fae.jpg": "/static/media/the-witcher.09218fae.jpg",
+    "static/media/witcher-small.94edb6c7.jpg": "/static/media/witcher-small.94edb6c7.jpg",
+    "static/media/witcher.2a535d15.jpg": "/static/media/witcher.2a535d15.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.85a27ad2.js",
-    "static/js/2.7ab57d4f.chunk.js",
-    "static/css/main.56fb679a.chunk.css",
-    "static/js/main.4848efbe.chunk.js"
+    "static/js/2.ea50e079.chunk.js",
+    "static/css/main.b7df87f9.chunk.css",
+    "static/js/main.7b383642.chunk.js"
   ]
 }
